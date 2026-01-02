@@ -1,5 +1,4 @@
 # Client-API
-# Currency Converter CLI (REST API Client)
 
 This is a **Python command-line application** that fetches **real-time currency exchange rates** from a public REST API and allows users to:
 
