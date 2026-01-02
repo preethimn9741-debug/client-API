@@ -5,7 +5,7 @@ This is a **Python command-line application** that fetches **real-time currency 
 - View exchange rates for a base currency
 - Convert an amount from one currency to another
 - Run automated tests using `pytest`
-- 
+
 ##  Features
 
 - Fetch live currency exchange rates
