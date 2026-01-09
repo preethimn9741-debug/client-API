@@ -55,15 +55,19 @@ Client API/
 ## Installation & Setup
 
 1. create an vertual environment
+
    python -m venv myvenv
    
 2. activate vertual environment
+   
    myvenv\Scripts\activate
-
+   
 3. install dependancies
+ 
    pip install flask requests pytest
    
-4. run the application 
+4. run the application
+
    python app.py
 
 ## output 
