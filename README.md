@@ -1,67 +1,83 @@
 # Client-API
 
-This is a **Python command-line application** that fetches **real-time currency exchange rates** from a public REST API and allows users to:
+This project is a **Currency Converter application** built using **Python**.  
+It started as a simple Python script and was extended into a **robust web application** with a backend, database support, interactive UI, and automated test cases.
 
-- View exchange rates for a base currency
-- Convert an amount from one currency to another
-- Run automated tests using `pytest`
+## Features
 
-##  Features
+- Currency conversion using live exchange rates
+  
+- Flask-based web application
+  
+- REST API for currency conversion
+  
+- Input validation and error handling
+  
+- Interactive frontend using HTML & JavaScript
+  
+- Automated test cases with pytest
+  
+- Modular and clean project structure
 
-- Fetch live currency exchange rates
-- Convert currency using command line
-- Retry API requests on failure
-- Configurable API URL (Environment Variable / config.json)
-- Input validation
-- Unit tests with mocked API calls
+## Technologies Used
 
-  ## Technologies Used
+- **Python**
+- **Flask** (Web Framework)
+- **Requests** (API calls)
+- **SQLite** (Database – optional extension)
+- **HTML / JavaScript**
+- **Pytest** (Testing)
 
-- Python 3
-- `requests`
-- `argparse`
-- `pytest`
-- `unittest.mock`
+## Project Structure
 
-##  Project Structure
+Client API/
 
-├── client.py # Main application code
+│── client.py # Core logic (validation & API calls)
 
-├── test_client.py # Unit tests
+│── app.py # Flask web application (main code)
 
-├── config.json # (Optional) API configuration
+│── database.py # Database initialization (optional)
 
-├── README.md # Project documentation
+│── requirements.txt
 
-## Create virtual environment (optional but recommended)
+├── templates/
 
-python -m venv venv
+│ └── index.html # Web UI
 
-source venv/bin/activate
+├── static/
 
-venv\Scripts\activate         
+│ └── script.js # JavaScript for interaction
 
-## Install dependencies
+├── test/
 
-pip install requests pytest
+│ └── test_client.py # Unit test cases
 
-## Usage
-## Show exchange rates
+## Installation & Setup
 
-python client.py rates --from USD
+1. create an vertual environment
+   python -m venv myvenv
+   
+2. activate vertual environment
+   myvenv\Scripts\activate
 
-## Convert currency
+3. install dependancies
+   pip install flask requests pytest
+   
+4. run the application 
+   python app.py
 
-python client.py convert --from USD --to INR --amount 100
+## output 
 
-## Example output:
+Conversion Successful
 
-100 USD = 8300 INR
+10 USD = 899.9 INR
 
-## conclusion
+## terminal output screensshoot 
 
-This project shows how to build a Python command-line application that fetches real-time data from a REST API.
+<img width="1565" height="495" alt="Screenshot 2026-01-09 101643" src="https://github.com/user-attachments/assets/49e9d810-0f87-4a9d-8f59-709ee9851eb1" />
 
-It demonstrates good practices like input validation, error handling, environment variables, and retry logic.
+## Conclusion
+This project demonstrates a complete currency conversion system built with Python and Flask. It includes input validation, API integration, an interactive web interface, and automated test cases. The application follows clean coding practices and reflects real-world backend development concepts.
 
-It helps beginners understand unit testing using pytest and mocking without calling real APIs.
+
+
